@@ -76,3 +76,26 @@ footer{margin-top:auto;padding:24px 0 3px;border-top:1px solid var(--line);displ
 .scrapbook-photos .photo-slot{border-color:#ccd6d2;background:#eeefeb;color:#a2adaa}
 .scrapbook-photos figcaption{font-size:11px;font-family:Georgia,'Times New Roman',serif;font-style:italic}
 @media(max-width:680px){.cv-pdf-viewer{height:490px;max-height:none}.cv-download-card{padding:19px}.cv-sheet-stack{min-width:75px;width:75px;height:100px;margin-right:0}.cv-sheet{width:72px;height:98px}.cv-sheet.front{padding:8px}.cv-sheet-title{height:5px;margin-bottom:8px}.cv-sheet i{margin:4px 0}.cv-sheet em{margin:8px 0 5px}.scrapbook-entry:nth-of-type(even) .scrapbook-photos{margin-left:0}.scrapbook-photos{gap:10px}.scrapbook-photos .scrap-photo:nth-child(2){padding-top:10px}.life-page .subtitle-cn{display:inline-block;margin-left:7px;font-size:13px}}
+
+/* V4: personal notebook with actual photographs from user's document */
+.memory-chapter{padding:38px 0 41px;border-bottom:1px solid var(--line)}
+.memory-chapter:last-of-type{border-bottom:0}
+.memory-marker{font:600 10px/1.5 system-ui,sans-serif;letter-spacing:.18em;color:#90a09f}
+.memory-chapter h3{font:500 clamp(21px,2.3vw,27px)/1.35 Georgia,serif;letter-spacing:-.02em;margin:9px 0 16px;color:#354958}
+.memory-chapter p{font:15px/1.94 Georgia,'Times New Roman',serif;color:#4b5760;max-width:720px;margin-bottom:18px}
+.memory-chapter em{color:#384d5b}
+.memory-photo{margin:0;min-width:0;max-width:100%}
+.memory-photo a{display:block;line-height:0}
+.memory-photo img{display:block;width:100%;height:auto;max-height:380px;object-fit:contain;object-position:left center;border-radius:3px;box-shadow:0 3px 16px #19242c12}
+.memory-photo figcaption{font:italic 12px/1.65 Georgia,serif;color:#829091;margin:8px 0 0}
+.memory-feature{max-width:460px;margin:20px 0 22px}
+.memory-feature .compact{max-width:350px}.memory-feature .calligraphy-photo{max-width:270px}.memory-feature .award-photo{max-width:290px}.memory-feature .group-photo{max-width:400px}
+.travel-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:18px;row-gap:24px;margin:22px 0 11px;align-items:start}
+.travel-gallery .memory-photo:nth-child(3n+2){padding-top:23px}
+.travel-gallery img{height:180px;object-fit:cover;object-position:center;max-height:none}
+.memory-pair{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);align-items:start;gap:21px;max-width:650px;margin:20px 0 24px}
+.memory-pair img{max-height:310px;object-fit:contain;object-position:left top}
+.memory-pair .memory-photo:nth-child(2){padding-top:19px}
+.endnote{font:italic 15px/1.8 Georgia,serif;color:#83908f;margin:30px 0 0}
+@media(max-width:740px){.travel-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.travel-gallery img{height:170px}.travel-gallery .memory-photo:nth-child(3n+2){padding-top:0}.travel-gallery .memory-photo:nth-child(even){padding-top:18px}}
+@media(max-width:480px){.travel-gallery{gap:11px}.travel-gallery img{height:136px}.memory-pair{gap:12px}.memory-pair img{max-height:245px}.memory-photo figcaption{font-size:11px}.memory-chapter{padding:30px 0}.memory-chapter p{font-size:14px}}
