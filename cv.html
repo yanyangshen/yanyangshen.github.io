@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal academic website of Yanyang Shen — education economics, higher education policy, and life beyond research.">
+  <meta name="theme-color" content="#fbfaf7">
+  <title>CV | Yanyang Shen</title>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script>
+    // Show the opening animation once per browser tab/session.
+    try {
+      if (!sessionStorage.getItem('ys-intro-seen') && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('play-intro');
+      }
+    } catch (e) { /* The website also works if storage is unavailable. */ }
+  </script>
+</head>
+<body data-page="cv">
+  <div class="opening-screen" aria-hidden="true">
+    <div class="opening-inner">
+      <span class="opening-small">WELCOME TO MY LITTLE CORNER</span>
+      <span class="opening-name">Yanyang Shen</span>
+      <span class="opening-rule"></span>
+      <span class="opening-foot">RESEARCH <span aria-hidden="true">·</span> LIFE <span aria-hidden="true">·</span> NOTES</span>
+    </div>
+  </div>
+  <div class="site-shell">
+    <aside class="sidebar" aria-label="Personal profile">
+      <div class="avatar" aria-label="Portrait placeholder">YS</div>
+      <!-- When ready, replace the avatar above with:
+           <img class="avatar portrait" src="images/profile.jpg" alt="Portrait of Yanyang Shen">
+      -->
+      <h1>Yanyang Shen</h1>
+      <p class="name-chinese" lang="zh-CN">沈艳阳</p>
+      <p class="role">M.Ed. Student<br>Educational Economy and Management</p>
+      <p class="affiliation">East China Normal University<br>Shanghai, China</p>
+      <a class="email" href="mailto:yanyangshen3@gmail.com">yanyangshen3@gmail.com</a>
+      <div class="sidebar-rule"></div>
+      <p class="small-note">Education economics · Higher education policy · Educational inequality</p>
+    </aside>
+
+    <main class="content" id="main-content">
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Yanyang Shen — Home">YANYANG SHEN</a>
+        <nav aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="cv.html" aria-current="page">CV</a>
+          <a href="life.html">生活碎片</a>
+        </nav>
+      </header>
+      <section class="page-section" aria-labelledby="page-title">
+        <p class="eyebrow">ACADEMIC CV</p>
+        <h2 id="page-title">Curriculum Vitae</h2>
+        <p>This page will host the complete four-page version of my academic CV, including my education, publications, research projects, presentations, teaching, and awards.</p>
+        <div class="cv-preview" aria-label="Full academic CV placeholder">
+          <div class="cv-paper" aria-hidden="true"><div class="cv-paper-head"></div><span></span><span></span><span class="short"></span><div class="cv-paper-head small"></div><span></span><span class="medium"></span><span></span><span class="short"></span></div>
+          <div class="cv-preview-copy">
+            <span class="cv-label">FULL ACADEMIC CV</span>
+            <h3>Yanyang Shen</h3>
+            <p>Four-page CV · PDF</p>
+            <div class="cv-soon">PDF will be added after the final revision</div>
+            <!-- Once your public PDF has been uploaded into the cv/ folder,
+                 replace the line above with:
+                 <a class="download-button" href="cv/Yanyang_Shen_Full_CV.pdf" download>Download full CV (PDF)</a>
+            -->
+          </div>
+        </div>
+        <p class="fine-print">Please remove private contact information (especially your phone number) before uploading a CV to a public website.</p>
+      </section>
+
+      <footer>
+        <span>© <span class="year">2026</span> Yanyang Shen</span>
+        <span>A little corner of the internet · <a href="index.html">Home</a></span>
+      </footer>
+    </main>
+  </div>
+  <script src="script.js?v=2" defer></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal academic website of Yanyang Shen — education economics, higher education policy, and life beyond research.">
+  <meta name="theme-color" content="#fbfaf7">
+  <title>生活碎片 | Yanyang Shen</title>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script>
+    // Show the opening animation once per browser tab/session.
+    try {
+      if (!sessionStorage.getItem('ys-intro-seen') && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('play-intro');
+      }
+    } catch (e) { /* The website also works if storage is unavailable. */ }
+  </script>
+</head>
+<body data-page="life">
+  <div class="opening-screen" aria-hidden="true">
+    <div class="opening-inner">
+      <span class="opening-small">WELCOME TO MY LITTLE CORNER</span>
+      <span class="opening-name">Yanyang Shen</span>
+      <span class="opening-rule"></span>
+      <span class="opening-foot">RESEARCH <span aria-hidden="true">·</span> LIFE <span aria-hidden="true">·</span> NOTES</span>
+    </div>
+  </div>
+  <div class="site-shell">
+    <aside class="sidebar" aria-label="Personal profile">
+      <div class="avatar" aria-label="Portrait placeholder">YS</div>
+      <!-- When ready, replace the avatar above with:
+           <img class="avatar portrait" src="images/profile.jpg" alt="Portrait of Yanyang Shen">
+      -->
+      <h1>Yanyang Shen</h1>
+      <p class="name-chinese" lang="zh-CN">沈艳阳</p>
+      <p class="role">M.Ed. Student<br>Educational Economy and Management</p>
+      <p class="affiliation">East China Normal University<br>Shanghai, China</p>
+      <a class="email" href="mailto:yanyangshen3@gmail.com">yanyangshen3@gmail.com</a>
+      <div class="sidebar-rule"></div>
+      <p class="small-note">Education economics · Higher education policy · Educational inequality</p>
+    </aside>
+
+    <main class="content" id="main-content">
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Yanyang Shen — Home">YANYANG SHEN</a>
+        <nav aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="cv.html">CV</a>
+          <a href="life.html" aria-current="page">生活碎片</a>
+        </nav>
+      </header>
+      <section class="page-section life-page" aria-labelledby="page-title">
+        <p class="eyebrow">LITTLE NOTES / PERSONAL</p>
+        <h2 id="page-title" lang="zh-CN">生活碎片</h2>
+        <p class="life-intro" lang="zh-CN">这里想留给研究之外的日子。游泳、在不同城市生活、旅行路上的小发现，还有一些还没来得及整理的照片和心情。慢慢记录，不必太正式。</p>
+        <div class="notebook-line"><span>Bits & pieces</span><span>一些日常片段，持续更新中</span></div>
+        <article class="life-entry" lang="zh-CN">
+          <div class="entry-number">01 / IN THE WATER</div>
+          <h3>在水里</h3>
+          <p class="life-caption">游泳是日常生活里很喜欢的一件事。以后想在这里留几张泳池边的照片，记下一些小小的进步。</p>
+          <div class="photo-strip two-photos">
+            <figure><div class="photo-slot tall">PHOTO · 01</div><figcaption>某一天的泳池 / 照片待添加</figcaption></figure>
+            <figure><div class="photo-slot wide">PHOTO · 02</div><figcaption>一句简短的游泳日记</figcaption></figure>
+          </div>
+        </article>
+        <article class="life-entry" lang="zh-CN">
+          <div class="entry-number">02 / JAPAN</div>
+          <h3>筑波的日子</h3>
+          <p class="life-caption">2025—2026年，我在日本筑波大学交换学习。这里先留给一些校园和日常的记忆。</p>
+          <div class="photo-strip three-photos">
+            <figure><div class="photo-slot square">PHOTO · 03</div><figcaption>校园的一角</figcaption></figure>
+            <figure><div class="photo-slot square">PHOTO · 04</div><figcaption>路过的风景</figcaption></figure>
+            <figure><div class="photo-slot square">PHOTO · 05</div><figcaption>一张想收藏的照片</figcaption></figure>
+          </div>
+        </article>
+        <article class="life-entry" lang="zh-CN">
+          <div class="entry-number">03 / ON THE ROAD</div>
+          <h3>路上</h3>
+          <p class="life-caption">一些城市、一些沿途的风景。以后每张照片后面，都可以放一句当时想说的话。</p>
+          <div class="photo-strip two-photos reverse">
+            <figure><div class="photo-slot wide">PHOTO · 06</div><figcaption>一个地方，一句话</figcaption></figure>
+            <figure><div class="photo-slot tall">PHOTO · 07</div><figcaption>旅途中偶然留下的画面</figcaption></figure>
+          </div>
+        </article>
+        <article class="life-entry last-entry" lang="zh-CN">
+          <div class="entry-number">04 / LITTLE THINGS</div>
+          <h3>其他小事</h3>
+          <p class="life-caption">还可以记下最近读到的句子、喜欢的电影、某个有趣的瞬间，或者一张没有特别理由却很喜欢的照片。</p>
+          <div class="photo-strip two-photos">
+            <figure><div class="photo-slot square">PHOTO · 08</div><figcaption>一件想记住的小事</figcaption></figure>
+            <figure><div class="photo-slot square">PHOTO · 09</div><figcaption>给未来的自己留一句话</figcaption></figure>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <span>© <span class="year">2026</span> Yanyang Shen</span>
+        <span>A little corner of the internet · <a href="index.html">Home</a></span>
+      </footer>
+    </main>
+  </div>
+  <script src="script.js?v=2" defer></script>
+</body>
+</html>

@@ -3,20 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Academic website of Yanyang Shen: education economics, higher education policy, and educational inequality.">
+  <meta name="description" content="Personal academic website of Yanyang Shen — education economics, higher education policy, and life beyond research.">
   <meta name="theme-color" content="#fbfaf7">
-  <title>Yanyang Shen | Academic Homepage</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Home | Yanyang Shen</title>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script>
+    // Show the opening animation once per browser tab/session.
+    try {
+      if (!sessionStorage.getItem('ys-intro-seen') && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('play-intro');
+      }
+    } catch (e) { /* The website also works if storage is unavailable. */ }
+  </script>
 </head>
-<body>
+<body data-page="home">
+  <div class="opening-screen" aria-hidden="true">
+    <div class="opening-inner">
+      <span class="opening-small">WELCOME TO MY LITTLE CORNER</span>
+      <span class="opening-name">Yanyang Shen</span>
+      <span class="opening-rule"></span>
+      <span class="opening-foot">RESEARCH <span aria-hidden="true">·</span> LIFE <span aria-hidden="true">·</span> NOTES</span>
+    </div>
+  </div>
   <div class="site-shell">
-    <aside class="sidebar" aria-label="Profile">
+    <aside class="sidebar" aria-label="Personal profile">
       <div class="avatar" aria-label="Portrait placeholder">YS</div>
-      <!-- To use your portrait, replace the line above with:
+      <!-- When ready, replace the avatar above with:
            <img class="avatar portrait" src="images/profile.jpg" alt="Portrait of Yanyang Shen">
       -->
       <h1>Yanyang Shen</h1>
-      <p class="name-chinese">沈艳阳</p>
+      <p class="name-chinese" lang="zh-CN">沈艳阳</p>
       <p class="role">M.Ed. Student<br>Educational Economy and Management</p>
       <p class="affiliation">East China Normal University<br>Shanghai, China</p>
       <a class="email" href="mailto:yanyangshen3@gmail.com">yanyangshen3@gmail.com</a>
@@ -24,114 +40,32 @@
       <p class="small-note">Education economics · Higher education policy · Educational inequality</p>
     </aside>
 
-    <main class="content">
+    <main class="content" id="main-content">
       <header class="site-header">
-        <div class="brand">YANYANG SHEN</div>
+        <a class="brand" href="index.html" aria-label="Yanyang Shen — Home">YANYANG SHEN</a>
         <nav aria-label="Main navigation">
-          <a href="#home">Home</a>
-          <a href="#research">Research</a>
-          <a href="#projects">Projects</a>
-          <a href="#cv">CV</a>
-          <a href="#life">Beyond Research</a>
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="research.html">Research</a>
+          <a href="cv.html">CV</a>
+          <a href="life.html">生活碎片</a>
         </nav>
       </header>
-
-      <section id="home" class="section intro">
-        <p class="eyebrow">Welcome</p>
-        <h2>Hi there, I'm Yanyang.</h2>
-        <p>I am a master's student in Educational Economy and Management at <strong>East China Normal University</strong>, where my work focuses on education policy, educational inequality, and postsecondary pathways.</p>
-        <p>My research examines how education policies and institutional arrangements shape students' opportunities and longer-term outcomes. I am particularly interested in <strong>economics of education, higher education policy evaluation, nontraditional students, and economic mobility</strong>.</p>
-        <p>Before my master's studies, I earned a bachelor's degree in International Economics and Trade at Hohai University. I also studied at the University of Tsukuba in Japan as an exchange student.</p>
-        <div class="keywords"><span>Economics of Education</span><span>Policy Evaluation</span><span>Postsecondary Pathways</span><span>Educational Inequality</span></div>
+      <section class="page-section home-intro" aria-labelledby="page-title">
+        <p class="eyebrow">WELCOME / 你好</p>
+        <h2 id="page-title">Hi there, I'm Yanyang.</h2>
+        <!-- This introduction is a first draft. Replace it with your own voice later. -->
+        <p>I am a master's student in Educational Economy and Management at <strong>East China Normal University</strong> in Shanghai, China.</p>
+        <p>My research interests lie in <strong>economics of education, higher education policy and evaluation, nontraditional students, postsecondary pathways, and educational inequality</strong>. I am interested in how policies and institutions shape educational opportunities and people's longer-term outcomes.</p>
+        <p>Before ECNU, I studied International Economics and Trade at Hohai University and spent an exchange term at the University of Tsukuba, Japan.</p>
+        <p class="soft-note">This introduction is still a work in progress. I'll make it more personal soon.</p>
       </section>
 
-      <section id="research" class="section">
-        <p class="eyebrow">Academic work</p>
-        <h2>Research &amp; Publications</h2>
-        <p class="section-intro">My current research spans higher education policy evaluation, adult learning, educational pathways, and AI in education.</p>
-        <h3>Manuscript under review</h3>
-        <ol class="pub-list">
-          <li><strong>Second Chances, Unequal Trajectories: Adult Higher Education after Vocational Tracking in China.</strong><br><span class="muted">Yanyang Shen and Hao Yao · Manuscript under review.</span></li>
-        </ol>
-        <h3>Working papers</h3>
-        <ol class="pub-list">
-          <li><strong>Do University Excellence Initiatives Transform Cities? Entrepreneurship, Innovation, and Urban Economic Development in China.</strong><br><span class="muted">Yanyang Shen, Y. Wu, and Hao Yao · Working paper (in Chinese).</span></li>
-          <li><strong>Beyond Performance Gains: A Three-Level Meta-Analysis of the Effects of Generative AI on EFL Learners' Motivation, Emotion, and Self-Efficacy.</strong><br><span class="muted">Yanyang Shen, S. Chen, A. C. K. Cheung, and Y. Chen · Working paper.</span></li>
-          <li><strong>Beyond the Hype: A Three-Level Meta-Analysis on the Effects of Artificial Intelligence on University Students' Self-Regulated Learning.</strong><br><span class="muted">S. Chen, A. C. K. Cheung, Yanyang Shen (corresponding author), and S. M. Ho · Working paper.</span></li>
-        </ol>
-        <h3>Peer-reviewed publications</h3>
-        <ol class="pub-list">
-          <li><strong>From Access to Learning Gains: Motivational Profiles, Learning Processes, and Competence Development among Adult Learners at an Open University.</strong><br><span class="muted">H. Xu, Yanyang Shen, G. Chen, and H. Yao · <em>Open Education Research</em>, in press (Chinese; CSSCI-indexed).</span></li>
-          <li><strong>The Impact of Agricultural Mechanization on the Efficiency of Agricultural Carbon Emissions in China—Based on the Super-SBM-Tobit Model.</strong><br><span class="muted">Yanyang Shen, Y. Wu, X. Na, and A. Wang · <em>Environmental Ecology</em>, 2023.</span></li>
-          <li><strong>Study on Coupling Coordination Development of Agricultural Production Efficiency and Carbon Emissions in Yangtze River Economic Belt.</strong><br><span class="muted">Y. Wu, Yanyang Shen, S. Xu, and R. Liang · <em>Acta Agriculturae Jiangxi</em>, 2023.</span></li>
-        </ol>
-        <p class="fine-print">Links to papers and preprints can be added when public versions are available and authorized for sharing.</p>
-      </section>
-
-      <section id="projects" class="section">
-        <p class="eyebrow">What I have worked on</p>
-        <h2>Research Experience</h2>
-        <div class="entry"><div class="entry-heading"><h3>Adult Higher Education and Learner Outcomes</h3><span>2025–2026</span></div><p>Led a first-author study using survey data from 11,408 adult higher education graduates, examining vocational tracking and subsequent wage mobility through ordered logistic regression, matching, weighting, and sensitivity analyses. Also analyzed 9,880 adult learners using latent class analysis and regression in a study later accepted by <em>Open Education Research</em>.</p></div>
-        <div class="entry"><div class="entry-heading"><h3>Higher Education Policy Evaluation</h3><span>2024–Present</span></div><p>Led a difference-in-differences study with panel data from 285 Chinese cities (2007–2022), evaluating China's Double First-Class university initiative and urban innovation, entrepreneurship, and economic development. Related work is part of a Ministry of Education major research project (24JZD015).</p></div>
-        <div class="entry"><div class="entry-heading"><h3>Education Finance and Policy</h3><span>2026–Present</span></div><p>Contributed to a Shanghai Municipal Education Commission commissioned study on extending compulsory education in China, reviewing education expenditure, student aid, and central–local fiscal transfers using 2015–2024 policy and fiscal data.</p></div>
-        <details class="extra"><summary>More research projects from my full CV</summary>
-          <ul>
-            <li><strong>University Program Restructuring and Emerging Industry Development:</strong> master's thesis in progress, using longitudinal administrative data and text-based measures of program–industry alignment.</li>
-            <li><strong>Shanghai and OECD Education Expenditure:</strong> comparative research on doctoral education, funding and disciplinary allocation (2024).</li>
-            <li><strong>Vocational Bachelor's Degree Policy:</strong> research on policy formulation, diffusion and institutional transition under a National Social Science Fund key project (2025).</li>
-            <li><strong>Shanghai Higher Education Clusters:</strong> comparative case analysis of Greater Boston and regional innovation systems (2025–2026).</li>
-            <li><strong>K–12 Curriculum Leadership:</strong> research design and conceptual work on cross-boundary curriculum leadership (2024–Present).</li>
-          </ul>
-        </details>
-
-        <h3 class="subsection-title">Selected Conference Presentations</h3>
-        <ul class="plain-list">
-          <li><strong>CIES 2027</strong> · <em>Second Chances, Unequal Trajectories</em> (accepted).</li>
-          <li><strong>BERA 2026</strong> · AI and university students' self-regulated learning.</li>
-          <li><strong>AERA 2026</strong> · Generative AI and EFL learners' motivation, emotion, and self-efficacy.</li>
-          <li><strong>EdUHK IPCRF 2026</strong> · Adult higher education and vocational tracking (Outstanding Paper Award).</li>
-          <li><strong>Jiangsu Annual Conference on Education Economics, 2025 &amp; 2026</strong> · First Prize Paper Award (twice).</li>
-        </ul>
-        <h3 class="subsection-title">Teaching</h3>
-        <p><strong>Teaching Assistant, Tuition and Free College Policy</strong> · East China Normal University, 2025–2026. Assisted with course design, teaching materials, and student assessment in economics of education.</p>
-      </section>
-
-      <section id="cv" class="section">
-        <p class="eyebrow">Background</p>
-        <h2>Curriculum Vitae</h2>
-        <p>My background includes graduate training at East China Normal University, an exchange term at the University of Tsukuba, and undergraduate study in economics at Hohai University.</p>
-        <div class="cv-grid">
-          <div><h3>Education</h3><p><strong>East China Normal University</strong><br>M.Ed., Educational Economy and Management<br><span class="muted">2024–2027 (expected) · GPA 3.82/4.00</span></p><p><strong>University of Tsukuba</strong><br>Exchange Student, Educational Sciences<br><span class="muted">2025–2026</span></p><p><strong>Hohai University</strong><br>B.Econ., International Economics and Trade<br><span class="muted">2020–2024 · GPA 4.84/5.00</span></p></div>
-          <div><h3>Selected Awards</h3><p>Outstanding Paper Award, EdUHK IPCRF (2026)</p><p>First Prize Paper Award, Jiangsu Annual Conference on Education Economics (2025 &amp; 2026)</p><p>Academic Excellence Scholarship, ECNU (2025 &amp; 2026)</p></div>
-        </div>
-        <div class="cv-downloads">
-          <!-- Before publishing public CV PDFs: remove private phone numbers/contact details.
-          Upload them to the cv/ folder, then remove the HTML comment around these links:
-          <a class="button" href="cv/Yanyang_Shen_Research_CV.pdf">Download 2-page CV</a>
-          <a class="button button-secondary" href="cv/Yanyang_Shen_Full_CV.pdf">Download full CV</a>
-          -->
-          <a class="button" href="mailto:yanyangshen3@gmail.com?subject=CV%20request">Request CV by email</a>
-        </div>
-        <p class="fine-print">You can add public PDF downloads here after preparing versions without private contact details.</p>
-      </section>
-
-      <section id="life" class="section">
-        <p class="eyebrow">Outside academia</p>
-        <h2>Beyond Research</h2>
-        <p>Outside research, I enjoy swimming and exploring new places. My time in Japan also gave me opportunities to experience new learning environments and everyday life beyond China.</p>
-        <div class="gallery">
-          <figure class="photo-placeholder"><div class="photo-box">PHOTO 01</div><figcaption>Swimming &amp; everyday life</figcaption></figure>
-          <figure class="photo-placeholder"><div class="photo-box">PHOTO 02</div><figcaption>My time in Tsukuba, Japan</figcaption></figure>
-          <figure class="photo-placeholder"><div class="photo-box">PHOTO 03</div><figcaption>Travel &amp; places</figcaption></figure>
-        </div>
-        <!-- Replace a placeholder with:
-             <figure><img src="images/tsukuba.jpg" alt="A photo from Tsukuba"><figcaption>Tsukuba, Japan</figcaption></figure>
-        -->
-        <p class="fine-print">These are photo placeholders. Replace them with your own images before sharing the site.</p>
-      </section>
-
-      <footer><span>© <span id="year">2026</span> Yanyang Shen</span><span>Built with GitHub Pages · <a href="#home">Back to top ↑</a></span></footer>
+      <footer>
+        <span>© <span class="year">2026</span> Yanyang Shen</span>
+        <span>A little corner of the internet · <a href="index.html">Home</a></span>
+      </footer>
     </main>
   </div>
+  <script src="script.js?v=2" defer></script>
 </body>
 </html>
