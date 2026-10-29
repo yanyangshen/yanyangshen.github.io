@@ -158,3 +158,22 @@ footer{margin-top:auto;padding:24px 0 3px;border-top:1px solid var(--line);displ
   .travel-gallery .memory-photo img {height:136px}
   .memory-pair .memory-photo img {max-height:250px}
 }
+
+
+/* V6: handcrafted galleries for travel, calligraphy, school outreach and Tsukuba memories. */
+.calligraphy-pair { grid-template-columns:minmax(0,0.75fr) minmax(0,1.15fr);max-width:760px;align-items:center;gap:22px; }
+.calligraphy-pair .memory-photo:nth-child(2){padding-top:0;}
+.calligraphy-pair .calligraphy-photo{max-width:260px;}
+.calligraphy-pair .temple-photo{max-width:420px;}
+.calligraphy-pair .temple-photo img{max-height:none;width:100%;height:auto;}
+.exchange-gallery,.memory-teaching-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 19px;align-items:start;max-width:730px;margin:24px 0 13px;}
+.exchange-gallery .memory-photo img,.memory-teaching-grid .memory-photo img{display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:initial;}
+.exchange-gallery .memory-photo:nth-child(2),.memory-teaching-grid .memory-photo:nth-child(2){padding-top:19px;}
+.exchange-gallery .memory-photo:nth-child(4),.memory-teaching-grid .memory-photo:nth-child(3){padding-top:10px;}
+.memory-teaching-grid .memory-photo:first-child{max-width:none;}
+.memory-teaching-grid .memory-photo:first-child img{width:100%;}
+@media(max-width:600px){
+  .calligraphy-pair{gap:12px;}
+  .exchange-gallery,.memory-teaching-grid{gap:16px 12px;}
+  .exchange-gallery .memory-photo:nth-child(2),.memory-teaching-grid .memory-photo:nth-child(2){padding-top:9px;}
+}
